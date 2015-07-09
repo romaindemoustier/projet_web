@@ -8,7 +8,7 @@
         <?php
         
         echo"lol";
-        echo"loool23";
+        echo"looold23";
         
         ?>
     </body>

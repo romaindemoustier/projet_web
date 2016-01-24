@@ -4,7 +4,7 @@ include ('./lib/php/Pliste_include.php');
 $db = Connexion::getInstance($dsn,$user,$pass);
 session_start();
 
-$scripts=array(); //stocker tous les fichiers d'inlinemod pour les lier plus loin
+$scripts=array(); 
 $i=0;
 foreach(glob('../admin/lib/js/jquery/*.js') as $js) {
     $fichierJs[$i]=$js;
@@ -65,6 +65,6 @@ foreach(glob('../admin/lib/js/jquery/*.js') as $js) {
             </div>	
         </section>
     </div>
-    <footer></footer>
+    <footer>//</footer>
 </body>
 </html>

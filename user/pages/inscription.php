@@ -5,7 +5,7 @@
 if(isset($_GET['submit_ccompte'])) {
     extract($_GET,EXTR_OVERWRITE);
     if(trim($nom_cc)!='' && trim($pren_cc)!='' && trim($adresse_cc)!='' && trim($ville_cc)!='' && trim($cp_cc)!='' && trim($pays_cc)!='' && trim($num_cc)!='') {
-        $mg2 = new creercompteManager($db);
+        $mg2 = new clientManager($db);
         $retour = $mg2->addClient($_GET);
         if($retour>=0){
             $texte="<span class='txtGras'>Votre demande a bien été enregistrée.</span>";
@@ -26,8 +26,8 @@ if(isset($_GET['submit_ccompte'])) {
     }
 }
 ?>
-<img src="../admin/images/clients - Copie.jpg" alt="Image de clients" />
-<!--creer une table contact afin de mettre ces données dans la DB ?-->
+<img src="../admin/images/inscription.jpg" alt="Image de clients" />
+
 <section id="resultat" class="txtGreen"><?php if(isset($texte)) print $texte; ?></section>
 <section id="leform">
     <form id="form_ccompte" action="<?php print $_SERVER['PHP_SELF'];?>" method="get">

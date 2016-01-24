@@ -1,5 +1,5 @@
 <?php
-$dsn="pgsql:host=localhost;dbname=Projet;port=5433";
+$dsn="pgsql:host=localhost;dbname=Projet_Romain;port=5432";
 $user="postgres";
 $pass="hephc";
 ?>

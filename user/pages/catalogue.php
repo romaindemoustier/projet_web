@@ -92,5 +92,7 @@ if(isset($_GET['choix'])){ //--> changer le nom de la vérification
         } //print $texte[0]->texte_accueil; 
     }//fin if isset
     ?>
+        
+        <a href="index.php?page=printCatalogue">Version PDF de notre catalogue</a>
 </table>
 

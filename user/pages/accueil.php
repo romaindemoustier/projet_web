@@ -1,2 +1,3 @@
-<h2>Games vous souhaite la bienvenue ! </h2>
 
+
+<h2>Administration de SmartGames</h2>

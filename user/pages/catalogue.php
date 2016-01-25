@@ -16,6 +16,11 @@ if(isset($_GET['choix'])){ //--> changer le nom de la vérification
 ?>
 <form action="<?php print $_SERVER['PHP_SELF'];?>" method="get">
     <table id="cata" border="1">
+        <tr class="tab_titre">
+            <td>Nom</td>
+            <td>Description</td>
+            <td>Prix</td>
+        </tr>
         <tr>
             <td id="choix_liste_deroulante">
                     
@@ -55,7 +60,7 @@ if(isset($_GET['choix'])){ //--> changer le nom de la vérification
                     for($i=0;$i<$nbr;$i++){
                         ?>
                         <option value="<?php print $tab[$i]->id_prod; ?>">
-                            <?php print $tab[$i]->prix; ?>
+                            <?php print $tab[$i]->prix; print ' €' ?> 
                         </option>
                     <?php
                     }

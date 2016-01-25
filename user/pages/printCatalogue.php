@@ -18,9 +18,10 @@ $pdf->SetFillColor(154,111,69);
 $pdf->SetDrawColor(0,0,0);
 $pdf->SetTextColor(0,0,0); 
 $pdf->SetFont('Arial','B',18);
-//$pdf->cell(3,3,$pdf->Image('../admin/images/ban_pdf.jpg',0,0),0,0,'L');
+
+$pdf->cell(180,8,$pdf->Image('../admin/images/ban_pdf.jpg',1,1),0,0,'L');
 $pdf->Ln();
-$pdf->cell(3.5,1,'Catalogue de SmartGames',0,0,'L');
+$pdf->cell(18,1,'Catalogue de FunGames',0,0,'C');
 $pdf->SetFont('Arial','B',9);
 $pdf->Ln();
 

@@ -2,37 +2,30 @@
 .txtGras {
 	font-weight:bold;
 }
-.txtBlue {
-    color:blue;
+.txtMauv {
+    color:purple;
 }
 .up {
     vertical-align:top;
 }
-.centrer {
-    text-align:center;
-}
 
 /****************** accueil ***************/
-#chenil_img {
-    display:inline-block;
-}
-#texte_accueil {
-    display:inline-block;
-    max-width:40%;
-}
+
+
+ul {background:#3399ff;}
 
 /****************** Layout ***************/
 #page {
-	margin:0 auto;
+	margin:auto;
 	width:90%; 
 	max-width:850px;/*m taille que header */
 	min-width:760px;
+        margin-bottom: 700px;
 }
 
 header {
 	margin:0 auto;
 	max-width:850px;
-        
 }
 
 #colGauche {
@@ -48,7 +41,7 @@ header {
 
 #contenu {
 	float:left;
-	margin-top:10%;
+	margin-top:5%;
 	margin-left:2%;
 	width:80%;
 }
@@ -69,18 +62,19 @@ footer {
 
 header img {
 	width:100%;
-        height:250px;
-      
+}
+#login_form
+{
+    background-color: blueviolet;
+    width : 50%;
+    height : 135px;
+    /*text-align:center;*/
+    margin-left: 25%;
+    margin-top : 5%;
 }
 
+.tab_titre
+{ font-weight: bold;
+  background-color:#33FF99;
 
-#cata {
-    
-    margin-top:-50px;
-    
-}
-
-#menu_cli{
-    
-    margin-top: 75px;
 }

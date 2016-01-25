@@ -15,7 +15,9 @@ foreach(glob('../admin/lib/js/jquery/*.js') as $js) {
 
 <html>
 <head>
-<title>Games</title>
+<title>FunGames</title>
+
+    <link rel="stylesheet" type="text/css" href="./lib/css/style_jquery.css"/>
     <link rel="stylesheet" type="text/css" href="../admin/lib/css/style_pc.css"/>
     <link rel="stylesheet" type="text/css" href="../admin/lib/css/mediaqueries.css"/>
    <?php
@@ -49,20 +51,10 @@ foreach(glob('../admin/lib/js/jquery/*.js') as $js) {
             </nav>
         </section>
 	<section id="contenu">
-            <div id="main">
-                <?php
-                if(!isset($_SESSION['page'])) {
-                    $_SESSION['page'] = "accueil";
-                }
-                if(isset($_GET['page'])) {
-                    $_SESSION['page'] = $_GET['page'];
-                }
-                $chemin='./pages/'.$_SESSION['page'].'.php';
-                if(file_exists($chemin)){
-                    include ($chemin);
-                }              
-                ?>                      
-            </div>	
+       
+             
+            
+          
         </section>
     </div>
     <footer>//</footer>

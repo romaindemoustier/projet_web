@@ -1,6 +1,6 @@
 <?php
 
-class Login {
+class login {
 
     private $_db;
     
@@ -11,7 +11,7 @@ class Login {
     function isAdmin($login,$password) {
         $retour=array();
         try {
-            $query="select verifier_connexion(:nom_user,:password) as retour";
+            $query="select verifier_connex(:nom_user,:password) as retour";
             $sql = $this->_db->prepare($query);
             $sql->bindValue(':nom_user',$_POST['login']);
             $sql->bindValue(':password',$_POST['password']);  

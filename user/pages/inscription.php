@@ -4,7 +4,7 @@
 
 if(isset($_GET['submit_ccompte'])) {
     extract($_GET,EXTR_OVERWRITE);
-    if(trim($nom_cc)!='' && trim($pren_cc)!='' && trim($adresse_cc)!='' && trim($ville_cc)!='' && trim($cp_cc)!='' && trim($pays_cc)!='' && trim($num_cc)!='') {
+    if(trim($nom)!='' && trim($prenom)!='' && trim($adresse)!='' && trim($ville)!='' && trim($cp)!='' && trim($pays)!='' && trim($numdetel)!='') {
         $mg2 = new clientManager($db);
         $retour = $mg2->addClient($_GET);
         if($retour>=0){
@@ -16,13 +16,13 @@ if(isset($_GET['submit_ccompte'])) {
     }
     else {
         $texte="Complétez tous les champs.";
-        if(trim($nom_cc)!='') {$_SESSION['form']['nom_cc']=$nom_cc;}
-        if(trim($pren_cc)!='') {$_SESSION['form']['pren_cc']=$pren_cc;}
-        if(trim($adresse_cc)!='') {$_SESSION['form']['adresse_cc']=$adresse_cc;}
-        if(trim($ville_cc)!='') {$_SESSION['form']['ville_cc']=$ville_cc;}
-        if(trim($cp_cc)!='') {$_SESSION['form']['cp_cc']=$cp_cc;}
-        if(trim($pays_cc)!='') {$_SESSION['form']['pays_cc']=$pays_cc;}
-        if(trim($num_cc)!='') {$_SESSION['form']['num_cc']=$num_cc;}
+        if(trim($nom)!='') {$_SESSION['form']['nom']=$nom;}
+        if(trim($prenom)!='') {$_SESSION['form']['prenom']=$prenom;}
+        if(trim($adresse)!='') {$_SESSION['form']['adresse']=$adresse;}
+        if(trim($ville)!='') {$_SESSION['form']['ville']=$ville;}
+        if(trim($cp)!='') {$_SESSION['form']['cp']=$cp;}
+        if(trim($pays)!='') {$_SESSION['form']['pays']=$pays;}
+        if(trim($numdetel)!='') {$_SESSION['form']['numdetel']=$numdetel;}
     }
 }
 ?>
@@ -37,13 +37,13 @@ if(isset($_GET['submit_ccompte'])) {
             <tr>
                 <td>Nom : </td>
                 <td>
-                    <?php if(isset($_SESSION['form']['nom_cc'])) { ?>
-                        <input type="text" name="nom_cc" id="nom_cc" value="<?php print $_SESSION['form']['nom_cc'];?>"/>
+                    <?php if(isset($_SESSION['form']['nom'])) { ?>
+                        <input type="text" name="nom" id="nom" value="<?php print $_SESSION['form']['nom'];?>"/>
                     <?php
                     }
                     else {
                         ?>
-                        <input type="text" name="nom_cc" id="nom_cc" placeholder="Votre Nom" required/>
+                        <input type="text" name="nom" id="nom" placeholder="Votre Nom" required/>
                         <?php
                     }
                     ?>
@@ -53,13 +53,13 @@ if(isset($_GET['submit_ccompte'])) {
 	    <tr>
                 <td>Prénom : </td>
                 <td>
-                    <?php if(isset($_SESSION['form']['pren_cc'])) { ?>
-                        <input type="text" name="pren_cc" id="pren_cc" value="<?php print $_SESSION['form']['pren_cc'];?>"/>
+                    <?php if(isset($_SESSION['form']['prenom'])) { ?>
+                        <input type="text" name="prenom" id="prenom" value="<?php print $_SESSION['form']['prenom'];?>"/>
                     <?php
                     }
                     else {
                         ?>
-                        <input type="text" name="pren_cc" id="pren_cc" placeholder="Votre Prenom" required/>
+                        <input type="text" name="prenom" id="prenom" placeholder="Votre Prenom" required/>
                         <?php
                     }
                     ?>
@@ -69,13 +69,13 @@ if(isset($_GET['submit_ccompte'])) {
              <tr>
                 <td>Adresse : </td>
                 <td>
-                    <?php if(isset($_SESSION['form']['adresse_cc'])) { ?>
-                        <input type="text" name="adresse_cc" id="adresse_cc" value="<?php print $_SESSION['form']['adresse_cc'];?>"/>
+                    <?php if(isset($_SESSION['form']['adresse'])) { ?>
+                        <input type="text" name="adresse" id="adresse" value="<?php print $_SESSION['form']['adresse'];?>"/>
                     <?php
                     }
                     else {
                         ?>
-                        <input type="text" name="adresse_cc" id="adresse_cc" placeholder="Votre Adresse" required/>
+                        <input type="text" name="adresse" id="adresse" placeholder="Votre Adresse" required/>
                         <?php
                     }
                     ?>
@@ -87,13 +87,13 @@ if(isset($_GET['submit_ccompte'])) {
             <tr>
                 <td>Ville : </td>
                 <td>
-                    <?php if(isset($_SESSION['form']['ville_cc'])) { ?>
-                        <input type="text" name="ville_cc" id="ville_cc" value="<?php print $_SESSION['form']['ville_cc'];?>"/>
+                    <?php if(isset($_SESSION['form']['ville'])) { ?>
+                        <input type="text" name="ville" id="ville" value="<?php print $_SESSION['form']['ville'];?>"/>
                     <?php
                     }
                     else {
                         ?>
-                        <input type="text" name="ville_cc" id="ville_cc" placeholder="Votre Ville" required/>
+                        <input type="text" name="ville" id="ville" placeholder="Votre Ville" required/>
                         <?php
                     }
                     ?>
@@ -104,13 +104,13 @@ if(isset($_GET['submit_ccompte'])) {
             <tr>
                 <td>CP : </td>
                 <td>
-                    <?php if(isset($_SESSION['form']['cp_cc'])) { ?>
-                        <input type="text" name="cp_cc" id="cp_cc" value="<?php print $_SESSION['form']['cp_cc'];?>"/>
+                    <?php if(isset($_SESSION['form']['cp'])) { ?>
+                        <input type="text" name="cp" id="cp" value="<?php print $_SESSION['form']['cp'];?>"/>
                     <?php
                     }
                     else {
                         ?>
-                        <input type="text" name="cp_cc" id="cp_cc" placeholder="Votre CP" required/>
+                        <input type="text" name="cp" id="cp" placeholder="Votre CP" required/>
                         <?php
                     }
                     ?>
@@ -121,13 +121,13 @@ if(isset($_GET['submit_ccompte'])) {
              <tr>
                 <td>Pays : </td>
                 <td>
-                    <?php if(isset($_SESSION['form']['pays_cc'])) { ?>
-                        <input type="text" name="pays_cc" id="pays_cc" value="<?php print $_SESSION['form']['pays_cc'];?>"/>
+                    <?php if(isset($_SESSION['form']['pays'])) { ?>
+                        <input type="text" name="pays" id="pays" value="<?php print $_SESSION['form']['pays'];?>"/>
                     <?php
                     }
                     else {
                         ?>
-                        <input type="text" name="pays_cc" id="pays_cc" placeholder="Votre Pays" required/>
+                        <input type="text" name="pays" id="pays" placeholder="Votre Pays" required/>
                         <?php
                     }
                     ?>
@@ -138,13 +138,13 @@ if(isset($_GET['submit_ccompte'])) {
              <tr>
                 <td>Numéro de téléphone : </td>
                 <td>
-                    <?php if(isset($_SESSION['form']['num_cc'])) { ?>
-                        <input type="text" name="num_cc" id="num_cc" value="<?php print $_SESSION['form']['num_cc'];?>"/>
+                    <?php if(isset($_SESSION['form']['numdetel'])) { ?>
+                        <input type="text" name="numdetel" id="numdetel" value="<?php print $_SESSION['form']['numdetel'];?>"/>
                     <?php
                     }
                     else {
                         ?>
-                        <input type="text" name="num_cc" id="num_cc" placeholder="Votre Numero" required/>
+                        <input type="text" name="numdetel" id="numdetel" placeholder="Votre Numero" required/>
                         <?php
                     }
                     ?>

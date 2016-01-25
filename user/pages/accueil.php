@@ -1,2 +1,2 @@
-<h2>SmartGames vous souhaite la bienvenue ! </h2>
+<h2>Games vous souhaite la bienvenue ! </h2>
 

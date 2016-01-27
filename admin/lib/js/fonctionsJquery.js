@@ -127,13 +127,13 @@ $(document).ready(function() {
   $('#cacher').click(function(){
     $('#avertisst').toggle();
     if($('#avertisst').is(':visible')){
-        $(this).val('Cacher le conseil');
+        $(this).val('Cacher');
     }
     else {
-        $(this).val('Afficher le conseil');
+        $(this).val('Afficher');
     }
   });
- 
+  
  //ne pas afficher div quand javascript est déjà actif.
   $('#no-js').remove();
   
@@ -147,5 +147,6 @@ $(document).ready(function() {
       }
     });
   });
+  
  
 });

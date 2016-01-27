@@ -1,0 +1,204 @@
+/*************** GENERALITES  ...........*/
+.txtGras 
+{
+	font-weight:bold;
+}
+.txtGreen
+{
+    color:green;
+}
+.up 
+{
+    vertical-align:top;
+}
+
+.txtBlue
+{
+    color:#66CCFF;
+}
+
+/****************** accueil ***************/
+
+
+ul 
+{
+height:260px;
+}
+
+/****************** Layout ***************/
+#page {
+	margin:auto;
+	width:90%; 
+	max-width:850px;/*m taille que header */
+	min-width:760px;
+        margin-bottom: 700px;
+}
+
+header {
+	margin:0 auto;
+	max-width:850px;
+}
+
+#colGauche {
+	float:left;
+	width:18%;
+	margin-top:2%;
+        margin-left:-100px;
+}
+
+.nav{
+    
+    
+  float:left;
+  width:18%;
+  margin-top:2%;  
+    
+}
+
+.deco
+{width:15%;}
+
+.exemple
+{
+  float:right;
+  width:70%;
+  margin-top:-350px;
+}
+
+.exemple_cli
+{
+  float:right;
+  width:70%;
+  margin-top:0px;
+  margin-right:150px;
+  margin-top:-40px;
+    
+}
+
+#menu li {
+	font-size:20px;
+       text-decoration:none; 
+	text-align:justify;
+        list-style-image: url(../../images/logo_puce.jpg);
+        font-family: Arial;
+       
+}
+
+a:link 
+{ 
+ text-decoration:none; 
+ border:1px;
+} 
+
+a:hover
+{color:green;}
+
+#contenu 
+{
+	float:left;
+	margin-top:6%;
+	margin-left:8%;
+	width:80%;
+}
+
+table
+{
+  margin-top:3%;  
+  margin-left:8%;
+}
+
+#cata
+
+{
+    margin-top:0;
+}
+
+#cata_a
+
+{
+    width:100%;
+    margin-left:-50px;
+    margin-top:0px;
+}
+.pdf
+{
+    margin-left:272px;
+}
+
+.img_contact
+{
+    width:80%
+}
+
+#main {
+	padding-left:1%;padding-right:1%;
+	width:100%;
+	display:inline-block;	
+}
+
+footer {
+        font-family:Arial;
+	clear:both;
+	color:#888;
+	width:80%;
+	margin:0 auto;
+	margin-left:710px;
+}
+
+.foot
+{
+    margin-left:-950px;
+}
+
+header img 
+{
+	width:100%;
+}
+
+.pdf_logo
+{
+    
+   width:8%; 
+   margin-left:370px;
+}
+#login_form
+{
+    background-color: #33FFCC;
+    width : 50%;
+    height : 155px;
+    /*text-align:center;*/
+    margin-left: 25%;
+    margin-top : 5%;
+}
+
+.tab_titre
+{ font-weight: bold;
+  background-color:#33FF99;
+
+}
+
+.bienvenue
+{
+    width:110%;
+    margin-left:80px;
+    
+}
+
+h2  
+{color:red;
+ text-align:center;
+ margin-left:100px;
+ text-decoration: underline;
+}
+
+#avertisst
+{ font-family: Arial;
+  font-style:italic;
+  text-align:center;
+  margin-left:200px;
+}
+
+.fun
+{
+    margin-left:200px;
+}
